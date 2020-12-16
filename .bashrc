@@ -8,7 +8,8 @@
 alias ls='ls --color=auto'
 alias lh='ls -lh'
 
-PS1='\u@\h \W\$ '
+# PS1='\u@\h \W\$ '
+PS1='\u \w\$ '
 
 # iBus libpinyin
 #export GTK_IM_MODULE=ibus
