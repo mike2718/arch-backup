@@ -4,7 +4,8 @@
 
 # These are additional aliases that are not defined in the common script.
 alias g='grep'
-alias l='$PAGER'
+# alias l='$PAGER'
+alias l='ls -l'
 alias a='awk'
 alias c='clear'
 alias e='exit'
@@ -13,12 +14,11 @@ alias -g L='|$PAGER'
 alias -g N='>/dev/null 2>&1' N1='>/dev/null' N2='2>/dev/null'
 
 export LC_ALL=en_US.utf8
-# 使得echo -n选项能去除行末尾的\n
 export ECHO_STYLE='GNU'
+HISTSIZE=1000
 
-# 不起作用
-PS1='\u \w\$ '
-# 使得echo -n选项能去除行末尾的\n
+# YASH_PS1='mike $ '
+# YASH_PS2='-->'
 
 # Uncomment to enable direnv support. (jq required)
 _update_direnv() {
@@ -40,7 +40,7 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-umask 002
+umask 0002
 
 
 # vim: set et sw=2 sts=2 tw=78 ft=sh:
