@@ -1,1 +1,1 @@
-# 自家Arch Linux的配置文件备份
+# 自家 Arch Linux 的各种配置文件备份

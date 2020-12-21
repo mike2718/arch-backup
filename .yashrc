@@ -5,7 +5,7 @@
 # These are additional aliases that are not defined in the common script.
 alias g='grep'
 # alias l='$PAGER'
-alias l='ls -l'
+alias l='ls -CF'
 alias a='awk'
 alias c='clear'
 alias e='exit'
@@ -14,7 +14,7 @@ alias -g L='|$PAGER'
 alias -g N='>/dev/null 2>&1' N1='>/dev/null' N2='2>/dev/null'
 
 export LC_ALL=en_US.utf8
-export ECHO_STYLE='GNU'
+export ECHO_STYLE=GNU
 HISTSIZE=1000
 
 # YASH_PS1='mike $ '
