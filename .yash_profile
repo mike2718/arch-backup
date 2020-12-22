@@ -1,6 +1,3 @@
-# 不起作用
-
-#umask 0002
 
 #YASH_PS1='mike $ '
 #YASH_PS2='-->'
