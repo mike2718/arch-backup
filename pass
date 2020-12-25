@@ -1,0 +1,3 @@
+#!/usr/local/bin/yash
+
+head /dev/random | tr -dc A-Za-z0-9 | head -c 8  >> pass.txt && echo >>pass.txt
