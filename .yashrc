@@ -4,6 +4,7 @@
 
 # These are additional aliases that are not defined in the common script.
 alias g='grep'
+alias ls='ls -g -o -h -lt -c --time-style=+"%Y-%m-%d %H:%M"'
 # alias l='$PAGER'
 alias l='ls -CF'
 alias a='awk'
