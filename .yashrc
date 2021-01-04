@@ -5,12 +5,13 @@
 # These are additional aliases that are not defined in the common script.
 alias g='grep'
 alias ls='ls -g -o -h -lt -c --time-style=+"%Y-%m-%d %H:%M"'
+alias lh='ls -lh'
 # alias l='$PAGER'
 alias l='ls -CF'
 alias a='awk'
 alias c='clear'
 alias e='exit'
-alias lh='ls -lh'
+alias bc='bc -q'
 alias -g L='|$PAGER'
 alias -g N='>/dev/null 2>&1' N1='>/dev/null' N2='2>/dev/null'
 
