@@ -17,7 +17,11 @@ alias -g N='>/dev/null 2>&1' N1='>/dev/null' N2='2>/dev/null'
 
 export LC_ALL=en_US.utf8
 export ECHO_STYLE=GNU
-TERM=xterm
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
+
+#TERM=xterm
 HISTSIZE=1000
 
 # YASH_PS1='mike $ '
