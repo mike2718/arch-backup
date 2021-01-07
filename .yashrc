@@ -11,7 +11,7 @@ alias l='ls -CF'
 alias a='awk'
 alias c='clear'
 alias e='exit'
-alias bc='bc -q'
+alias bc='bc -ql'
 alias -g L='|$PAGER'
 alias -g N='>/dev/null 2>&1' N1='>/dev/null' N2='2>/dev/null'
 
