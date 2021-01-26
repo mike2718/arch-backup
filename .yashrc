@@ -13,6 +13,7 @@ alias c='clear'
 alias e='exit'
 alias s='sync'
 alias bc='bc -ql'
+alias pcc='pcc -g -std=c99 -O0'
 alias -g L='|$PAGER'
 alias -g N='>/dev/null 2>&1' N1='>/dev/null' N2='2>/dev/null'
 
@@ -26,6 +27,10 @@ HISTSIZE=1000
 
 # YASH_PS1='mike $ '
 # YASH_PS2='-->'
+
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]] && [[ -z $XDG_SESSION_TYPE ]]; then
+  XDG_SESSION_TYPE=wayland exec dbus-run-session gnome-session
+fi
 
 # Uncomment to enable direnv support. (jq required)
 _update_direnv() {
@@ -44,7 +49,8 @@ YASH_AFTER_CD=("$YASH_AFTER_CD" '_update_direnv')
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
+#    PATH="$HOME/bin:$PATH"
+    PATH="$PATH:$HOME/bin"
 fi
 
 umask 0002
